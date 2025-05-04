@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartu Nama Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://img.freepik.com/free-photo/blurred-view-corridor-with-plants_1203-1080.jpg?t=st=1746331088~exp=1746334688~hmac=8063f5cc990e1e745e58db2cea18fbfb849c610003f5f4050cbc92c26cb7bc7c&w=996') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+      border: 2px solid #fb923c;
+    }
+    .card img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border: 3px solid #fb923c;
+    }
+    .card h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ea580c;
+    }
+    .card p {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin: 0;
+      font-weight: 500;
+    }
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    .buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .btn {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.75rem;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn.whatsapp {
+      background-color: #25D366;
+    }
+    .btn.whatsapp:hover {
+      background-color: #1eb152;
+    }
+    .btn.contact {
+      background-color: #fb923c;
+    }
+    .btn.contact:hover {
+      background-color: #f97316;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.ibb.co.com/S8yQFM9/1746080056452.jpg" alt="Profile" />
+    <h2>Yudi Permadi</h2>
+    <p>F &amp; B Supervisor</p>
+
+    <div class="contact-info">
+      <div>📞 087736691446</div>
+      <div>✉️ yudipermadi@gmail.com</div>
+    </div>
+
+    <div class="buttons">
+      <a href="https://wa.me/6287736691446" target="_blank" class="btn whatsapp">Chat via WhatsApp</a>
+      <a
+        href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3APermadi%3BYudi%0AFN%3AYudi%20Permadi%0AORG%3A%0ATITLE%3AF%20%26%20B%20Supervisor%0ATEL%3BTYPE%3Dcell%3A%2B6287736691446%0AEMAIL%3Ayudipermadi%40gmail.com%0AEND%3AVCARD"
+        download="yudi_permadi_contact.vcf"
+        class="btn contact"
+      >Simpan Kontak</a>
+    </div>
+  </div>
+</body>
+</html>
